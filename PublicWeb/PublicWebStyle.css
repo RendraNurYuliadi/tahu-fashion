@@ -481,7 +481,6 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* lebih blur dan lebih gelap */
   padding: 30px;
   border-radius: 20px;
-  max-height: 500px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
