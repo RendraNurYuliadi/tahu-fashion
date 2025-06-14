@@ -1353,7 +1353,7 @@ footer {
   
 
   .box-right .thumbnail img {
-    max-height: 700px;
+    max-height: 750px;
   }
 
   .box-content1 h1 {
@@ -1419,7 +1419,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 500px;
+    max-height: 650px;
   }
 
   .box-service {
@@ -1579,7 +1579,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 400px;
+    max-height: 600px;
   }
 
   .box-content1 h1 {
@@ -1669,7 +1669,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 600px;
+    max-height: 500px;
   }
 
   .cta-explore a,
@@ -1775,7 +1775,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 550px;
+    max-height: 450px;
   }
 
   .box-content1 h1 {
@@ -1851,6 +1851,12 @@ footer {
   }
 }
 
+@media (max-width: 300px) {
+  .box-right .thumbnail img {
+    max-height: 400px;
+  }
+}
+
 /* Breakpoint: max-width 300px */
 @media (max-width: 300px) {
   section {
@@ -1878,7 +1884,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 400px;
+    max-height: 380px;
   }
 
   .box-content1 h1 {
