@@ -1419,7 +1419,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 600px;
+    max-height: 500px;
   }
 
   .box-service {
@@ -1534,7 +1534,7 @@ footer {
   .mobile-nav{
     padding: 30px;
     gap: 20px;
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 
@@ -1579,7 +1579,7 @@ footer {
   }
 
   .box-right .thumbnail img {
-    max-height: 600px;
+    max-height: 400px;
   }
 
   .box-content1 h1 {
