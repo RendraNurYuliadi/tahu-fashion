@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="RegisterStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+  <div>
+  <main class="container" role="main">
+    <div class="rectangle"></div>
+    <div class="group-form">
+    <h1>Register</h1>
+    <p class="subtitle">Masukan detail informasi terkait dirimu</p>
+    <form>
+      <div class="left-col">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="text" name="fullname" placeholder="Nama Lengkap" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <input type="password" name="confirm_password" placeholder="Konfirmasi Password" required />
+        <button type="submit">Daftar</button>
+      </div>
+      <div class="right-col">
+        <textarea name="address" placeholder="Alamat" aria-label="Alamat" required></textarea>
+        <input type="tel" name="phone" placeholder="No Telepon" required />
+        <input type="date" name="birthdate" placeholder="Tanggal Lahir" required />
+        <input type="text" name="gender" placeholder="Jenis Kelamin" required />
+      </div>
+    </form>
+    </div>
+    <p class="login-text">
+      Sudah Memiliki Akun? <a style="color: black;" href="/Login/Login.html"><strong>Log in di sini</strong>
+    </p>
+  </main>
+  </body>
+</html>

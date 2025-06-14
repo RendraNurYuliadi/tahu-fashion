@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PublicWeb/PublicWebStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/PublicPageAssets/logo.png">
+    <title>Tahu Fashion</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- Desktop Navbar -->
+            <div class="logo">
+                <img src="/assets/PublicPageAssets/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="/PublicWeb/AboutPage.html">About</a></li>
+                <li><a href="#product">Product</a></li>
+            </ul>
+            <div class="cta">
+                <a href="/PublicWeb/HomePage.html">Back</a>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <img src="/assets/PublicPageAssets/icon-list-menu.png" alt="Menu">
+            </div>
+            <!-- Mobile Navbar -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="logo">
+                    <img src="/assets/PublicPageAssets/logo.png" alt="">
+                </div>
+                <div class="menu-list">
+                    <a href="#home">Home</a>
+                    <a href="/PublicWeb/AboutPage.html">About</a>
+                    <a href="/PublicWeb/ProductPage.html">Product</a>
+                    <a href="/PublicWeb/HomePage.html" style="color: black; padding: 6px 12px; border-radius: 5px; background: #ffffff; font-weight: 800;">Back</a>
+                </div>
+                <div class="cta-nav">
+                    <img src="/assets/PublicPageAssets/icon-close.png" id="closeNav" alt="Close">
+                </div>
+            </div>
+            <div class="nav-overlay" id="navOverlay"></div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-container">
+                <div class="box-left">
+                    <h2>Produk Kami <img src="/assets/PublicPageAssets/icon-cart.gif" alt=""></h2>
+                    <h1>Karena Setiap <span class="highlight">Gaya</span> Punya <span class="highlight">Cerita</span>, dan Kami Hadir untuk Lengkapinya!</h1>
+                    <p>Dari yang simpel hingga standout, temukan koleksi produk fashion pilihan yang dirancang untuk semua kepribadian. Gaya kamu, aturan kamu.</p>                    
+                    <div class="cta-group">
+                        <div class="cta-explore">
+                            <a href="/PublicWeb/AboutPage.html">
+                                Explore <img src="/assets/PublicPageAssets/cta-explore.png" alt="">
+                            </a>
+                        </div>
+                        <div class="cta-shop">
+                            <a href="">
+                                Shop Now <img src="/assets/PublicPageAssets/cta-shop-now.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-right">
+                    <div class="thumbnail">
+                        <img src="/assets/PublicPageAssets/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product" id="product">
+            <div class="product-container">
+                <div class="title">
+                    <h1>Product</h1>
+                    <p>Jelajahi pilihan menarik dari produk yang kami tawarkan</p>
+                </div>
+                    <div class="data-filtering">
+                        <!-- Input Search -->
+                        <div class="search">
+                            <img src="/assets/PublicPageAssets/icon-search2.png" alt="Icon Search">
+                            <input type="text" id="searchInput" placeholder="Cari produk di sini...">
+                        </div>
+                    
+                        <!-- Dropdown Kategori -->
+                        <div class="category">
+                            <label for="categorySelect">Filter Pada Kategori:</label>
+                            <div class="select-wrapper">
+                            <select id="categorySelect" name="category">
+                                <option value="">Tampilkan Semua</option>
+                                <option value="atasan">Atasan</option>
+                                <option value="bawahan">Bawahan</option>
+                                <option value="dress">Dress</option>
+                                <option value="jaket-outer">Jaket / Outer</option>
+                                <option value="setelan">Setelan</option>
+                                <option value="pakaian-dalam">Pakaian Dalam</option>
+                                <option value="aksesoris">Aksesoris</option>
+                                <option value="sepatu">Sepatu</option>
+                                <option value="tas">Tas</option>
+                            </select>
+                            <img id="dropdownIcon" src="/assets/PublicPageAssets/drop-close.png" alt="Dropdown Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-card">
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-01.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 1</h1>
+                                <h3>Atasan</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 249,000,00</div><div class="discount">-30%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-02.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 2</h1>
+                                <h3>Bawahan</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 199,000,00</div><div class="discount">-20%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-03.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 3</h1>
+                                <h3>Dress</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 329,000,00</div><div class="discount">-25%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-04.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 4</h1>
+                                <h3>Jaket / Outer</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 459,000,00</div><div class="discount">-40%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-05.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 5</h1>
+                                <h3>Setelan</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 389,000,00</div><div class="discount">-35%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-06.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 6</h1>
+                                <h3>Pakaian Dalam</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 129,000,00</div><div class="discount">-15%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-07.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 7</h1>
+                                <h3>Aksesoris</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 89,000,00</div><div class="discount">-10%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-08.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 8</h1>
+                                <h3>Sepatu</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 599,000,00</div><div class="discount">-50%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-09.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 9</h1>
+                                <h3>Tas</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 299,000,00</div><div class="discount">-20%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-10.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 10</h1>
+                                <h3>Dress</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 339,000,00</div><div class="discount">-30%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p-011.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>Produk 11</h1>
+                                <h3>Atasan</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 209,000,00</div><div class="discount">-25%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/PublicWeb/DetailProductPage.html" class="product-card">
+                            <div class="picture-card">
+                                <img src="/assets/PublicPageAssets/p4.png" alt="">
+                            </div>
+                            <div class="data-card">
+                                <h1>UrbanFlex Oversize Tee</h1>
+                                <h3>Aksesoris</h3>
+                                <div class="pricement">
+                                    <div class="price">Rp. 599,000,00</div><div class="discount">-50%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="empty-product">
+                            <h1>Produk Tidak Ditemukan</h1>
+                                <p>
+                                    Wah, sepertinya produk yang kamu cari belum tersedia saat ini. Coba gunakan kata kunci lain, pilih kategori berbeda, atau cek kembali nanti, ya~ Kami terus menambahkan produk baru yang kece-kece buat kamu. Terus eksplor, siapa tahu jodohmu ada di scroll berikutnya 😄✨
+                                </p>
+                        </div>
+                    </div>
+                    <div class="product-pagination">
+                        <div class="cta-prev-pagination">
+                            <a href=""><img src="/assets/PublicPageAssets/cta-prev.png" alt=""></a>
+                        </div>
+                        <div class="cta-next-pagination">
+                            <a href=""><img src="/assets/PublicPageAssets/cta-next.png" alt=""></a>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+        <div class="cta-chat animate__animated animate__slow">
+            <a href="https://wa.me/6281292731092"><img src="/assets/PublicPageAssets/cta-chat.gif" alt=""></a>
+        </div>
+
+        <div class="cta-back-home animate__animated animate__slow" id="backToHome">
+            <a href="#home"><img src="/assets/PublicPageAssets/cta-back-home.png" alt=""></a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h1>Tahu Fashion</h1>
+            <p>Tampil simpel, beda, dan tetap gaya. Temukan fashion yang cocok sama kamu.</p>
+        </div>
+
+        <div class="footer-content">
+            <h1>Legal & Info</h1>
+            <ul>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-s&k.png" alt="">Syarat & Ketentuan</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-private.png" alt="">Kebijakan Privasi</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-powered.png" alt="">Tahu Ngoding - Kelompok 1</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content">
+            <h1>Contact Account</h1>
+            <ul>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-ig2.png" alt="">@tahufashion</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-twiter2.png" alt="">@tahufashion_id</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-fb.png" alt="">Tahu Fashion Official</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-wa.png" alt="">+62 812-3456-7890</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-tiktok.png" alt="">@tahufashion.id</a></li>
+                <li><a href=""><img src="/assets/PublicPageAssets/icon-yt.png" alt="">Tahu Fashion Channel</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content">
+            <h1>Lokasi Toko</h1>
+            <p>Kunjungi kami di Jl. Gaya No. 88, Jakarta. Buka setiap hari!</p>
+        </div>
+        
+
+    </footer>
+
+    <script src="PublicWebScript.js"></script>
+</body>
+</html>
