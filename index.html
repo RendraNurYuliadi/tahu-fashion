@@ -7,19 +7,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <title>Tahu Fashion</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #222222);
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      flex-direction: column;
       color: #fff;
-      font-family: 'Poppins', sans-serif;
-      overflow: hidden;
       text-align: center;
+      position: relative;
     }
 
     .typing {
@@ -29,7 +34,8 @@
       white-space: nowrap;
       overflow: hidden;
       width: 0;
-      animation: typing 2s steps(12, end) forwards, blink 0.7s step-end infinite;
+      animation: typing 4s steps(12, end) forwards, blink 0.7s step-end infinite;
+      z-index: 2;
     }
 
     .subtitle {
@@ -38,7 +44,8 @@
       opacity: 0;
       margin-top: 1rem;
       animation: fadeIn 1s ease forwards;
-      animation-delay: 2.2s;
+      animation-delay: 4.2s;
+      z-index: 2;
     }
 
     @keyframes typing {
@@ -54,17 +61,64 @@
     @keyframes fadeIn {
       to { opacity: 1 }
     }
+
+    .dots {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .dot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: float infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.4;
+      }
+      50% {
+        transform: translate(30px, -30px) scale(1.2);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.4;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="dots" id="dot-container"></div>
+
   <div class="typing">TAHU FASHION</div>
   <div class="subtitle">Karena semua orang punya gaya sendiri.</div>
 
   <script>
-    // Redirect setelah 5 detik
-    setTimeout(function () {
+    const container = document.getElementById("dot-container");
+    for (let i = 0; i < 50; i++) {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
+      dot.style.top = Math.random() * 100 + "vh";
+      dot.style.left = Math.random() * 100 + "vw";
+      dot.style.animationDuration = (Math.random() * 7 + 4) + "s";
+      dot.style.animationDelay = Math.random() * 5 + "s";
+      container.appendChild(dot);
+    }
+
+    setTimeout(() => {
       window.location.href = "/PublicWeb/HomePage.html";
-    }, 5000);
+    }, 8000);
   </script>
 </body>
 </html>
