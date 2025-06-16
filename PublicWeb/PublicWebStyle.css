@@ -62,7 +62,7 @@
    padding: 18px 250px;
    margin: 5px;
    background-color: black;
-   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.452);
+   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.75);
    /* border-radius: 0 0 30px 30px; */
    border-radius: 20px;
    transition: all 0.3s ease;
@@ -148,7 +148,7 @@
   background-color: black;
   color: white;
   padding: 50px;
-  border-radius: 30px;
+  border-radius: 20px;
   z-index: 1000;
   gap: 30px;
   width: 100%;
