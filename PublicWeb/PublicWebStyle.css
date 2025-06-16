@@ -60,10 +60,11 @@
  /* Class saat navbar discroll */
  .navbar.scrolled {
    padding: 18px 250px;
-   /* margin: 15px; */
+   margin: 5px;
    background-color: black;
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.452);
-   border-radius: 0 0 30px 30px;
+   /* border-radius: 0 0 30px 30px; */
+   border-radius: 20px;
    transition: all 0.3s ease;
  }
 
