@@ -13,68 +13,36 @@ html {
 
 .container {
   display: flex;
-  height: 100vh;
-  max-width: 100vw;
-  overflow: hidden;
-}
-
-.left,
-.right {
-  flex: 1;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
 }
 
-.left {
-  position: relative;
-}
-
-.left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius:0 50px 50px 0;
-}
-
-/* Untuk layout form */
 .right {
-  flex: 1;
+  width: 100%;
+  max-width: 460px;
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 30px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 40px;
+  align-items: center;
 }
 
 .logo {
   align-self: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  padding-left: 10px; /* Tambahan opsional kalau mau agak masuk */
 }
 
 .logo img {
-  max-width: 160px;
-  height: auto;
-  display: none;
-}
-
-.logo2 {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 2;
-  padding: 20px; /* Bisa disesuaikan */
-}
-
-
-.logo2 img {
-  max-width: 120px;
-  height: auto;
+  max-width: 100px; /* diperkecil */
   display: block;
-  border-radius: 0;
 }
 
 .form-wrapper {
-  max-width: 400px;
   width: 100%;
   text-align: center;
 }
@@ -86,7 +54,7 @@ h1 {
 }
 
 p.subtitle {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   margin-bottom: 40px;
 }
@@ -106,7 +74,6 @@ input[type='password'] {
   font-size: 14px;
   color: #000;
   margin-bottom: 20px;
-  font-weight: 400;
 }
 
 input::placeholder {
@@ -135,8 +102,10 @@ input::placeholder {
   accent-color: black;
 }
 
-.forgot-password {
+.forgot-password a{
   font-weight: 700;
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -151,7 +120,14 @@ button {
   font-size: 18px;
   cursor: pointer;
   margin-bottom: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .register {
   font-size: 14px;
@@ -162,74 +138,20 @@ button {
   font-weight: 700;
 }
 
-/* ==== RESPONSIVE ==== */
+/* ===== Responsive ===== */
 
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 1000px) {
-  .form-wrapper {
-    max-width: 350px;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  
-}
-
-@media (max-width: 700px) {
-  .container {
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background: #fff;
-  }
-
-  .left {
-    display: none;
-  }
-
+@media (max-width: 600px) {
   .right {
-    width: 100%;
-    max-width: 600px;
-    padding: 40px 30px;
-    height: 400px;
-    background: #fff;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative;
-  }
-
-  .logo {
-    align-self: flex-start;
-    margin-bottom: 20px;
-  }
-
-  .logo2 {
-    display: none;
+    padding: 32px 24px;
   }
 
   .logo img {
     max-width: 120px;
-    display: block
   }
 
-  .form-wrapper {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-
-@media (max-width: 600px) {
   h1 {
     font-size: 28px;
   }
-
-  .logo img { max-width: 110px; }
 
   button {
     height: 50px;
@@ -237,29 +159,22 @@ button {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+  .logo img {
+    max-width: 100px;
+  }
+
   input[type='email'],
   input[type='password'] {
     height: 40px;
     font-size: 13px;
   }
 
-  .logo img { max-width: 100px;}
-
   .options {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-}
-
-@media (max-width: 400px) {
-  button {
-    height: 46px;
-    font-size: 15px;
-  }
-
-  .logo img { max-width: 90px; }
 
   h1 {
     font-size: 24px;
@@ -272,8 +187,4 @@ button {
   p.subtitle {
     font-size: 13px;
   }
-}
-
-@media (max-width: 300px) {
-  .logo img { max-width: 80px; }
 }

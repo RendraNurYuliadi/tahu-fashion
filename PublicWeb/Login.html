@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/PublicWeb/LoginStyle.css" />
+  <link rel="icon" type="image/png" href="/assets/PublicPageAssets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="right">
+      <div class="logo">
+        <img src="/assets/LoginAssets/logo.png" alt="Logo" />
+      </div>
+
+      <div class="form-wrapper" role="form">
+        <h1>Login</h1>
+        <p class="subtitle">Masukkan email dan password mu!</p>
+        <form>
+          <input placeholder="Email" required type="email" />
+          <input placeholder="Password" required type="password" />
+          <div class="options">
+            <label>
+              <input type="checkbox" checked />
+              Ingat Saya
+            </label>
+            <span class="forgot-password"><a href="/PublicWeb/ForgotPassword.html">Lupa Password?</a></span>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p class="register">
+          Belum memiliki akun?
+          <a href="/PublicWeb/Register.html"><strong>Daftar di sini</strong></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

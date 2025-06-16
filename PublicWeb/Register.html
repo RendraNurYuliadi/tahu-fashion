@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Register</title>
-  <link rel="stylesheet" href="RegisterStyle.css" />
+  <link rel="stylesheet" href="/PublicWeb/RegisterStyle.css" />
+  <link rel="icon" type="image/png" href="/assets/PublicPageAssets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -42,6 +43,9 @@
               <option value="rahasia">Rahasia</option>
             </select>
             <input type="file" name="foto_profil" accept="image/png, image/jpeg" />
+            <div class="preview-container">
+              <img id="imagePreview" alt="" />
+            </div>            
             <button type="submit">Daftar</button>
           </div>
         </form>
@@ -49,5 +53,25 @@
       <p class="login-text">Sudah punya akun? <a style="color: black;" href="/PublicWeb/Login.html"><strong>Login di sini</strong></a></p>
     </div>
   </div>
+
+  <script>
+    const fileInput = document.querySelector('input[name="foto_profil"]');
+    const previewImage = document.getElementById('imagePreview');
+  
+    fileInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          previewImage.src = e.target.result;
+          previewImage.style.display = 'block'; // Munculkan setelah file dipilih
+        }
+        reader.readAsDataURL(file);
+      } else {
+        previewImage.style.display = 'none'; // Jika user batal pilih file
+      }
+    });
+  </script>
+  
 </body>
 </html>
